@@ -34,7 +34,7 @@ export default function SignupForm(){
       }
     }
 
-    if(name === "passwordConfirm"){
+    if(name === "password_confirm"){
       setPasswordConfirm(value)
       if(value?.length < 8){
         setError("비밀번호는 8자리 이상으로 입력해주세요")
@@ -59,7 +59,7 @@ export default function SignupForm(){
 </div>
 <div className="form__block">
   <label htmlFor="password">비밀번호 확인</label>
-  <input type="password" name="password" id="password" required onChange={onChange}/>
+  <input type="password" name="password_confirm" id="password_confirm" required onChange={onChange}/>
 </div>
 {error && error?.length > 0 &&(
   <div className="form__block">
